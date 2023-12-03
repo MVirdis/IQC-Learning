@@ -178,7 +178,7 @@ class REN(nn.Module):
 	
 	def forward(self, u, x0=None, get_state=False):
 		torch._assert(u.dim() == 3, "u has to have 3 dimensions (batch_size,n_u,1)")
-		torch._assert(u.size()[1:] == (self.n_u,1), "u has to have 3 dimensions (batch_size,n_u,1)")
+		torch._assert(u.size()[1] == self.n_u, "u has wrong size {}".format(u.size()[1]))
 
 		if x0 is not None:
 			torch._assert(x0.dim() == 3, "x0 has to have 3 dimensions (batch_size,n_x,1)")
