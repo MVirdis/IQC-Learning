@@ -4,8 +4,13 @@ A non-linear augmentation of linear control policies for uncertain LTI systems, 
 
 Files:
 * *control.yml*: the Anaconda python environment with all dependencies used
-* *TestRENModule.ipynb*: a jupyter notebook with some tests of the REN module
+* *Controller Optimization.ipynb*: a jupyter notebook with some tests of the optimization process
 * *models/*: contains the model classes
+* *saved_models/*: contains the trained models as torch checkpoint files (.pt)
+* *utils/*: contains some utility classes
+* *models/*: contains the model classes
+* *matlab/*: contains the matlab files for creating the data and the IQC augmentation problem (requires MOSEK and YALMIP)
+* *data/*: contains state-space data and initial conditions
 
 References:
 

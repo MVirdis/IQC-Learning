@@ -10,7 +10,7 @@ def t(x):
 
 class REN(nn.Module):
 	"""
-	Implementation of an acyclic R-REN without feedthrough (i.e. D_22 = 0).
+	Implementation of an acyclic R-REN [2] without feedthrough (i.e. D_22 = 0).
 	"""
 
 	def __init__(self, n_x, n_units, n_y, n_u, Q, S, R, bias=False, train_qsr=False):
